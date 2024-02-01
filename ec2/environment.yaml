@@ -1,0 +1,51 @@
+ec2:
+  - name: "stg-rts-landing"
+    env_name: staging
+    region: ap-south-1
+    account: "221192224682"
+    type: "t2.micro"
+    ami: "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230919"
+    device_name: /dev/sdb
+    key_name: spi_test
+    vpc_id: vpc-06406d08fa592d38a
+    is_public: false  
+    script: user_data.sh
+    allowed_ports:
+      - http:
+        - port: 80
+          ip: "any"
+          description: "used for http"
+      - https:
+        - port: 443
+          ip: "any"
+          description: "used for https"
+      - https:
+        - port: 22
+          ip: "39.12.58.96/32"
+          description: "used for ssh from server"
+
+
+  - name: "stg-rts-landing-1"
+    env_name: staging
+    region: ap-south-1
+    account: "221192224682"
+    type: "t2.micro"
+    ami: "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230919"
+    device_name: /dev/sdb
+    key_name: spi_test
+    vpc_id: vpc-06406d08fa592d38a
+    is_public: true
+    script: update.sh
+    allowed_ports:
+      - http:
+        - port: 80
+          ip: "any"
+          description: "used for http"
+      - https:
+        - port: 443
+          ip: "any"
+          description: "used for https"
+      - https:
+        - port: 22
+          ip: "39.12.58.96/32"
+          description: "used for ssh from server"

@@ -1,0 +1,23 @@
+db:
+    - name: stgrtsdb
+      id: stg
+      account: "221192224682"
+      region: "ap-south-1"
+      vpc_id: "vpc-0e13c8784754600b2"
+      subnet_ids: ["subnet-0d6a3de48bbadea52", "subnet-07f80a6476e630c7d", "subnet-042dbbe323dad0922"]
+      username: "stg_user"
+      password: "stg_password"
+      engine: "postgres"
+      instance_type: "t3.micro"
+      storage: "20"
+      port: 5432
+      multi_az: False
+      allowed_ports:
+      - http:
+        - port: 5432
+          ip: "0.0.0.0/0"
+          description: "used for all access"
+      - https:
+        - port: 5432
+          ip: "39.12.58.96/32"
+          description: "used for server connection"

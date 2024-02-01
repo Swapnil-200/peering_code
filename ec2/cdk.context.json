@@ -1,0 +1,120 @@
+{
+  "vpc-provider:account=221192224682:filter.isDefault=false:filter.vpc-id=vpc-06406d08fa592d38a:region=ap-south-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-06406d08fa592d38a",
+    "vpcCidrBlock": "172.1.0.0/16",
+    "ownerAccountId": "221192224682",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "snet-public-subnet-03",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0d3f6560b189d9d70",
+            "cidr": "172.1.2.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-0578c3f3963705098"
+          }
+        ]
+      },
+      {
+        "name": "snet-public-subnet-02",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0491249bdb3802bd5",
+            "cidr": "172.1.1.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-057cc2a00a75794fc"
+          }
+        ]
+      },
+      {
+        "name": "snet-private-internet-subnet-02",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-03cb3caeb9366078c",
+            "cidr": "172.1.4.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-07d3519cbd6a3304f"
+          }
+        ]
+      },
+      {
+        "name": "snet-public-subnet-01",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0fac140bf6dd65125",
+            "cidr": "172.1.0.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-04883febf911c97c2"
+          }
+        ]
+      },
+      {
+        "name": "snet-private-subnet-01",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0acec935eb6f755d8",
+            "cidr": "172.1.6.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-079a2e1581249725a"
+          }
+        ]
+      },
+      {
+        "name": "snet-private-subnet-03",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-035eccc6470e9afa1",
+            "cidr": "172.1.8.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-0eabbdd56d67dc93f"
+          }
+        ]
+      },
+      {
+        "name": "snet-private-subnet-02",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0e697d5258201ed5b",
+            "cidr": "172.1.7.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-093adc565f7621ee7"
+          }
+        ]
+      },
+      {
+        "name": "snet-private-internet-subnet-01",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0edea6536e08f0c87",
+            "cidr": "172.1.3.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-072e30f666b5cf19d"
+          }
+        ]
+      },
+      {
+        "name": "snet-private-internet-subnet-03",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0f5acb9b196de63f8",
+            "cidr": "172.1.5.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-076d80f4bb9a6f971"
+          }
+        ]
+      }
+    ]
+  },
+  "ami:account=221192224682:filters.image-type.0=machine:filters.name.0=amzn2-ami-kernel-5.10-hvm-2.0.20220912.1-x86_64-gp2:filters.state.0=available:region=ap-south-1": "ami-01216e7612243e0ef",
+  "ami:account=221192224682:filters.image-type.0=machine:filters.name.0=ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230919:filters.state.0=available:region=ap-south-1": "ami-0287a05f0ef0e9d9a"
+}
